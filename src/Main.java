@@ -8,40 +8,88 @@ public class Main {
     static ArrayList<Outro> listaOutros = new ArrayList<Outro>();
 
     public static void main(String[] args) {
-        Lanche lanche1 = new Lanche(1, "X-Salada", 12.0, 0.8);
+        Lanche lanche1 = new Lanche();
+        lanche1.setCodigo(1);
+        lanche1.setDescricao("X-Salada");
+        lanche1.setPreco(12.0);
+        lanche1.setPeso(0.8);
         listaLanches.add(lanche1);
 
-        Lanche lanche2 = new Lanche(2, "X-Tudo", 18.0, 1.2);
+        Lanche lanche2 = new Lanche();
+        lanche2.setCodigo(2);
+        lanche2.setDescricao("X-Tudo");
+        lanche2.setPreco(18.0);
+        lanche2.setPeso(1.2);
         listaLanches.add(lanche2);
 
-        Lanche lanche3 = new Lanche(3, "X-Burguer", 10.0, 0.6);
+        Lanche lanche3 = new Lanche();
+        lanche3.setCodigo(3);
+        lanche3.setDescricao("X-Burguer");
+        lanche3.setPreco(10.0);
+        lanche3.setPeso(0.6);
         listaLanches.add(lanche3);
 
-        Lanche lanche4 = new Lanche(4, "X-Bacon", 15.0, 1.0);
+        Lanche lanche4 = new Lanche();
+        lanche4.setCodigo(4);
+        lanche4.setDescricao("X-Bacon");
+        lanche4.setPreco(15.0);
+        lanche4.setPeso(1.0);
         listaLanches.add(lanche4);
 
-        Bebida bebida1 = new Bebida(1, "Refrigerante", 5.0, 0.35);
+        Bebida bebida1 = new Bebida();
+        bebida1.setCodigo(1);
+        bebida1.setDescricao("Refrigerante");
+        bebida1.setPreco(5.0);
+        bebida1.setVolume(0.35);
         listaBebidas.add(bebida1);
 
-        Bebida bebida2 = new Bebida(2, "Refrigerante", 10.0, 0.6);
+        Bebida bebida2 = new Bebida();
+        bebida2.setCodigo(2);
+        bebida2.setDescricao("Refrigerante");
+        bebida2.setPreco(10.0);
+        bebida2.setVolume(0.6);
         listaBebidas.add(bebida2);
 
-        Bebida bebida3 = new Bebida(3, "Suco", 6.0, 0.35);
+        Bebida bebida3 = new Bebida();
+        bebida3.setCodigo(3);
+        bebida3.setDescricao("Suco");
+        bebida3.setPreco(6.0);
+        bebida3.setVolume(0.35);
         listaBebidas.add(bebida3);
 
-        Bebida bebida4 = new Bebida(4, "Suco", 12.0, 0.6);
+        Bebida bebida4 = new Bebida();
+        bebida4.setCodigo(4);
+        bebida4.setDescricao("Suco");
+        bebida4.setPreco(12.0);
+        bebida4.setVolume(0.6);
         listaBebidas.add(bebida4);
 
-        Outro outro1 = new Outro(1, "Batata", 5.0, "Pequena");
+        Outro outro1 = new Outro();
+        outro1.setCodigo(1);
+        outro1.setDescricao("Batata");
+        outro1.setPreco(5.0);
+        outro1.setTamanho("Pequena");
         listaOutros.add(outro1);
 
-        Outro outro2 = new Outro(2, "Batata", 12.5, "Pequena");
+        Outro outro2 = new Outro();
+        outro2.setCodigo(2);
+        outro2.setDescricao("Batata");
+        outro2.setPreco(12.5);
+        outro2.setTamanho("Média");
         listaOutros.add(outro2);
 
-        Outro outro3 = new Outro(3, "Batata", 20.0, "Pequena");
+        Outro outro3 = new Outro();
+        outro3.setCodigo(3);
+        outro3.setDescricao("Batata");
+        outro3.setPreco(20.0);
+        outro3.setTamanho("Grande");
         listaOutros.add(outro3);
 
-        Outro outro4 = new Outro(4, "Salada", 8.0, "Pequena");
+        Outro outro4 = new Outro();
+        outro3.setCodigo(4);
+        outro3.setDescricao("Salada");
+        outro3.setPreco(8.0);
+        outro3.setTamanho("Média");
         listaOutros.add(outro4);
 
         menu();
