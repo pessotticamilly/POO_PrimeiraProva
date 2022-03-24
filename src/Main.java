@@ -274,21 +274,63 @@ public class Main {
 
         if(valida) {
             Pedido pedido = coletaDadosPedido(codigo);
+            int certeza;
 
             switch (selecionaTipo) {
                 case 1:
                     Lanche lanche = coletaDadosLanche(pedido);
-                    listaLanches.add(lanche);
+                    System.out.print("\nVocê tem certeza que desejas cadastrar?" +
+                                     "\n1 - Sim" +
+                                     "\n2 - Não" +
+                                     "\nR: ");
+                    certeza = sc.nextInt();
+
+                    switch (certeza){
+                        case 1:
+                            listaLanches.add(lanche);
+                            break;
+
+                        case 2:
+                            menu();
+                            break;
+                    }
                     break;
 
                 case 2:
                     Bebida bebida = coletaDadosBebida(pedido);
-                    listaBebidas.add(bebida);
+                    System.out.print("\nVocê tem certeza que desejas cadastrar?" +
+                            "\n1 - Sim" +
+                            "\n2 - Não" +
+                            "\nR: ");
+                    certeza = sc.nextInt();
+
+                    switch (certeza){
+                        case 1:
+                            listaBebidas.add(bebida);
+                            break;
+
+                        case 2:
+                            menu();
+                            break;
+                    }
                     break;
 
                 case 3:
                     Outro outro = coletaDadosOutro(pedido);
-                    listaOutros.add(outro);
+                    System.out.print("\nVocê tem certeza que desejas cadastrar?" +
+                            "\n1 - Sim" +
+                            "\n2 - Não" +
+                            "\nR: ");
+                    certeza = sc.nextInt();
+
+                    switch (certeza){
+                        case 1:
+                            listaOutros.add(outro);
+                            break;
+                        case 2:
+                            menu();
+                            break;
+                    }
                     break;
 
                 default:
