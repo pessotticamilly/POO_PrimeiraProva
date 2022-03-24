@@ -453,17 +453,61 @@ public class Main {
         int indice = valida(selecionaTipo);
 
         if(indice >= 0){
+            int certeza;
+
             switch (selecionaTipo) {
                 case 1:
-                    listaLanches.remove(indice);
+                    System.out.print("\nVocê tem certeza que desejas remover?" +
+                            "\n1 - Sim" +
+                            "\n2 - Não" +
+                            "\nR: ");
+                    certeza = sc.nextInt();
+
+                    switch (certeza) {
+                        case 1:
+                            listaLanches.remove(indice);
+                            break;
+
+                        case 2:
+                            menu();
+                            break;
+                    }
                     break;
 
                 case 2:
-                    listaBebidas.remove(indice);
+                    System.out.print("\nVocê tem certeza que desejas remover?" +
+                            "\n1 - Sim" +
+                            "\n2 - Não" +
+                            "\nR: ");
+                    certeza = sc.nextInt();
+
+                    switch (certeza) {
+                        case 1:
+                            listaBebidas.remove(indice);
+                            break;
+
+                        case 2:
+                            menu();
+                            break;
+                    }
                     break;
 
                 case 3:
-                    listaOutros.remove(indice);
+                    System.out.print("\nVocê tem certeza que desejas remover?" +
+                            "\n1 - Sim" +
+                            "\n2 - Não" +
+                            "\nR: ");
+                    certeza = sc.nextInt();
+
+                    switch (certeza) {
+                        case 1:
+                            listaOutros.remove(indice);
+                            break;
+
+                        case 2:
+                            menu();
+                            break;
+                    }
                     break;
 
                 default:
