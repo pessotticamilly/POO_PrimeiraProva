@@ -1,10 +1,6 @@
 public class Lanche extends Pedido {
     private double peso;
 
-    public Lanche(){
-
-    }
-
     public Lanche(int codigo, String descricao, double preco, double peso) {
         super(codigo, descricao, preco);
         this.peso = peso;
