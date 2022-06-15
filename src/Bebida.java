@@ -11,12 +11,4 @@ public class Bebida extends Pedido {
         return super.toString() +
                 "\nVolume: " + volume;
     }
-
-    public double getVolume() {
-        return volume;
-    }
-
-    public void setVolume(double volume) {
-        this.volume = volume;
-    }
 }

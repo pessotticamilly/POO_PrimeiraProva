@@ -11,12 +11,4 @@ public class Outro extends Pedido {
         return super.toString() +
                 "\nTamanho: " + tamanho;
     }
-
-    public String getTamanho() {
-        return tamanho;
-    }
-
-    public void setTamanho(String tamanho) {
-        this.tamanho = tamanho;
-    }
 }

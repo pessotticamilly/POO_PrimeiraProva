@@ -12,7 +12,7 @@ public abstract class Pedido {
         this.preco = preco;
     }
 
-    public static void produtosEstaticos(){
+    public static void produtosEstaticos() {
         listaPedidos.add(new Lanche(1, "X-Salada", 12.0, 0.8));
         listaPedidos.add(new Lanche(2, "X-Tudo", 18.0, 1.2));
         listaPedidos.add(new Lanche(3, "X-Burguer", 10.0, 0.6));
@@ -29,47 +29,31 @@ public abstract class Pedido {
         listaPedidos.add(new Outro(4, "Salada", 8.0, "Média"));
     }
 
-    public static void cadastrar(int codigo){
+    public static void cadastrar(int codigo) {
         Pedido.listaPedidos.add(Main.coletaDados(codigo));
     }
 
-    public static void editar(int indice, double preco){
+    public static void editar(int indice, double preco) {
         listaPedidos.get(indice).setPreco(preco);
     }
 
-    public static String listar(int i){
+    public static String listar(int i) {
         return listaPedidos.get(i).toString();
     }
 
-    public static void remover(int indice){
+    public static void remover(int indice) {
         listaPedidos.remove(indice);
     }
 
     @Override
     public String toString() {
-        return "\nCódigo: "     + codigo    +
+        return "\nCódigo: " + codigo +
                 "\nDescrição: " + descricao +
-                "\nPreço: "     + preco;
+                "\nPreço: " + preco;
     }
 
     public int getCodigo() {
         return codigo;
-    }
-
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public double getPreco() {
-        return preco;
     }
 
     public void setPreco(double preco) {
